@@ -60,9 +60,34 @@
           width: 100%;
           height: 3px;
           background-color: $primaryFontColor;
+          transform-origin: left;
+          transition: all 2s ease;
         }
       }
 
+    }
+  }
+
+  &.active {
+    // background-color: $primaryFontColor;
+    // color: $primaryFontColor;
+
+    .hamburger-menu {
+
+      span {
+        &:first-child {
+          // background-color: $primaryColor;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          // background-color: $primaryColor;
+          transform: rotate(-45deg);
+        }
+
+      }
     }
   }
 

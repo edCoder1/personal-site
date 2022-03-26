@@ -7,7 +7,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 export default function Topbar() {
   return (
-    <div id='topbar' className='top-bar'>
+    <div id='topbar' className='top-bar active'>
       <div className="wrapper">
 
         <div className="left">
