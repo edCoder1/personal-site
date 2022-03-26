@@ -33,6 +33,11 @@ export default function Topbar() {
             <SmartphoneIcon className='icon'/>
             <span className='text'>+52 3312324974</span>
           </div>
+          <div className="hamburger-menu">
+            <span className="line-1"></span>
+            <span className="line-2"></span>
+            <span className="line-3"></span>
+          </div>
         </div>
 
       </div>
