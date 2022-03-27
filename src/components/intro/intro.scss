@@ -2,4 +2,94 @@
 
 .intro {
   background-color: $secondaryColor;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    // overflow: hidden;
+
+    .image-container {
+      margin-top: 50px;
+      margin-left: 10px;
+      width: 900px;
+      height: 900px;
+      background-color: $circleColor;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: left;
+    }
+
+    img {
+      height: 80%;
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    position: relative;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-top: -10px;
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    h3 {
+      margin-top: -10px;
+      font-size: 20px;
+
+      span {
+        font-size: inherit;
+        color: crimson;
+      }
+
+      // UNUSED TYPING ANIMATION
+
+      // .ityped-cursor {
+      //   animation: blink 1s infinite;
+      // }
+
+      // @keyframes blink {
+      //     50%{
+      //         opacity: 1;
+      //     }
+      //     100%{
+      //         opacity: 0;
+      //     }
+      // }
+
+    }
+
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 25%;
+
+      img {
+        width: 50px;
+        // animation: arrowBlink 2s infinite;
+      }
+
+      // @keyframes arrowBlink {
+      //   to {
+      //     opacity: 0;
+      //   }
+        
+      // }
+    }
+
+  }
+
 }
