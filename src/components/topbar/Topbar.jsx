@@ -12,7 +12,7 @@ export default function Topbar({ openMenu, setOpenMenu }) {
 
         <div className="left">
           <a href='#intro' className='logo'>
-              hello!
+              code, live.
           </a>
         </div>
 
