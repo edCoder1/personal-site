@@ -1,11 +1,18 @@
 import './portfolio.scss';
 
 import PortfolioCategory from './portfolio-category/PortfolioCategory';
+import PortfolioItem from './portfolio-item/PortfolioItem';
+import {
+  featuredPortfolio,
+  webPortfolio,
+  mobilePortfolio
+} from '../../data/portfolio'
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Portfolio() {
-  const [slected, setSelected] = useState('featured');
+  const [selected, setSelected] = useState('featured');
+  const [data, setData] = useState(featuredPortfolio);
 
   const portfolioCategories = [
     { id: 'featured', title: 'Featured' },
@@ -13,32 +20,47 @@ export default function Portfolio() {
     { id: 'mobile',   title: 'Moblie Application' },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case 'featured':
+        setData(featuredPortfolio)
+        break;
+      case 'web':
+        setData(webPortfolio)
+        break;
+      case 'mobile':
+        setData(mobilePortfolio)
+        break;
+      default:
+        break;
+    }
+  }, [selected])
+
   return (
     <div id='portfolio' className='portfolio'>
       <h1>Portfolio</h1>
       <ul>
-        {portfolioCategories.map((category) =>
-          <PortfolioCategory
-            id={category.id}
-            title={category.title}
-            active={slected === category.id}
-            setSelected={setSelected}
-          />
-        )}
+        {
+          portfolioCategories.map((category) =>
+            <PortfolioCategory
+              id={category.id}
+              title={category.title}
+              active={selected === category.id}
+              setSelected={setSelected}
+            />
+          )
+        }
       </ul>
       <div className="container">
-        <div className="item">
-          <img src="assets/coding.jpg"/>
-          <h3>Banking App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/coding.jpg"/>
-          <h3>Web App</h3>
-        </div>
-        <div className="item">
-          <img src="assets/coding.jpg"/>
-          <h3>Mobile App</h3>
-        </div>
+          {
+            data.map((item) =>
+              <PortfolioItem
+                id={item.id}
+                title={item.title}
+                img={item.img}
+              />
+            )
+          }
       </div>
     </div>
   )
