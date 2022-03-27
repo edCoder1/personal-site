@@ -1,0 +1,16 @@
+@import '../../../index.scss';
+
+.portfolio-category {
+  font-size: 14px;
+  margin-top: 0;
+  padding: 5px;
+  margin-right: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &.active {
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
+
+}
