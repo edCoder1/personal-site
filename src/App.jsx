@@ -6,13 +6,20 @@ import Portfolio from './components/portfolio/Portfolio';
 import Works from './components/works/Works';
 import Testimonials from './components/testimonials/Testimonials';
 import Contact from './components/contact/Contact';
+import Menu from './components/menu/Menu';
+import { useState } from 'react';
 
 
 
 function App() {
+
+  const [openMenu, setOpenMenu] = useState(false);
+
   return (
-    <div className="app">
-      <Topbar/>
+    <div className="app"> 
+      <Topbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+
       <div className="sections">
         <Intro/>
         <Portfolio/>

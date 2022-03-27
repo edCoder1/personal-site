@@ -5,9 +5,9 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-export default function Topbar() {
+export default function Topbar({ openMenu, setOpenMenu }) {
   return (
-    <div id='topbar' className='top-bar active'>
+    <div id='topbar' className={'top-bar ' + (openMenu && 'active')}>
       <div className="wrapper">
 
         <div className="left">
@@ -33,7 +33,7 @@ export default function Topbar() {
             <SmartphoneIcon className='icon'/>
             <span className='text'>+52 3312324974</span>
           </div>
-          <div className="hamburger-menu">
+          <div className="hamburger-menu" onClick={() => setOpenMenu(!openMenu)}>
             <span className="line-1"></span>
             <span className="line-2"></span>
             <span className="line-3"></span>

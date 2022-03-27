@@ -1,13 +1,14 @@
 @import '../../index.scss';
 
 .top-bar {
-  background-color: $primaryColor;
-  color: $primaryFontColor;
+  background-color: $secondaryColor;
+  color: $primaryColor;
   width: 100%;
   height: 90px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+  transition: all 1s ease;
 
   .wrapper {
     padding: 10px 30px;
@@ -59,7 +60,7 @@
         span {
           width: 100%;
           height: 3px;
-          background-color: $primaryFontColor;
+          background-color: $primaryColor;
           transform-origin: left;
           transition: all 2s ease;
         }
@@ -69,21 +70,21 @@
   }
 
   &.active {
-    // background-color: $primaryFontColor;
-    // color: $primaryFontColor;
+    background-color: $primaryColor;
+    color: $secondaryColor;
 
     .hamburger-menu {
 
       span {
         &:first-child {
-          // background-color: $primaryColor;
+          background-color: $secondaryColor;
           transform: rotate(45deg);
         }
         &:nth-child(2) {
           opacity: 0;
         }
         &:last-child {
-          // background-color: $primaryColor;
+          background-color: $secondaryColor;
           transform: rotate(-45deg);
         }
 
