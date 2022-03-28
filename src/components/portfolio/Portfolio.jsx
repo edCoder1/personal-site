@@ -17,7 +17,7 @@ export default function Portfolio() {
   const portfolioCategories = [
     { id: 'featured', title: 'Featured' },
     { id: 'web',      title: 'Web Application' },
-    { id: 'mobile',   title: 'Moblie Application' },
+    { id: 'mobile',   title: 'Mobile Application' },
   ];
 
   useEffect(() => {
