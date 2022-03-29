@@ -6,11 +6,25 @@ import { works } from '../../data/works';
 
 export default function Works() {
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const moveSlide = (direction = '') => {
+
+    const totalSlides = works.length - 1;
+
+    if (direction === 'left') {
+      setCurrentSlide( (currentSlide > 0) ? (currentSlide -1) : 2 );
+    } else {
+      setCurrentSlide( (currentSlide < totalSlides) ? (currentSlide + 1 ) : 0 );
+    }
+
+  };
+
   return (
     <div id='works' className='works'>
       <div
         className="slider"
-        // style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+        style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
 
         {
@@ -47,13 +61,13 @@ export default function Works() {
         src="assets/arrow.png"
         alt=""
         className="arrow left"
-        // onClick={() => moveSlide('left')}
+        onClick={() => moveSlide('left')}
       />
       <img
         src="assets/arrow.png"
         alt=""
         className="arrow right"
-        // onClick={() => moveSlide('right')}
+        onClick={() => moveSlide('right')}
       />
     </div>
   );
