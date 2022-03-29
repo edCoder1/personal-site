@@ -1,38 +1,60 @@
 import './works.scss';
+import { useState } from 'react';
 
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
+import { works } from '../../data/works';
 
 export default function Works() {
+
   return (
     <div id='works' className='works'>
-      <div className="slider">
-        <div className="container">
-          <div className="item">
+      <div
+        className="slider"
+        // style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
+      >
 
-            <div className="left">
-              <div className="left-container">
-                {/* Put some igame/icon/bafge here */}
-                {/* <img src="" alt="" className="img-container" /> */}
-                <div className="icon-container">
-                  <SmartphoneIcon/>
+        {
+          works.map((work) => (
+            <div id={work.id} className="container">
+              <div className="item">
+    
+                <div className="left">
+                  <div className="left-container">
+                    {/* Put some igame/icon/bafge here */}
+                    {/* <img src="" alt="" className="img-container" /> */}
+                    <div className="icon-container">
+                      {work.iconnnnn || <SmartphoneIcon/>}
+                    </div>
+                    <h2>{work.title}</h2>
+                    <p>{work.desc}</p>
+                    <span>Projects</span>
+                  </div>
                 </div>
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorum, iste minima facere molestiae illum magni!
-                </p>
-                <span>Projects</span>
+    
+                <div className="right">
+                  <img
+                    src={work.img}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
+          ))
+        }
 
-            <div className="right">
-              <img
-                src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
       </div>
+      <img
+        src="assets/arrow.png"
+        alt=""
+        className="arrow left"
+        // onClick={() => moveSlide('left')}
+      />
+      <img
+        src="assets/arrow.png"
+        alt=""
+        className="arrow right"
+        // onClick={() => moveSlide('right')}
+      />
     </div>
-  )
+  );
 }
