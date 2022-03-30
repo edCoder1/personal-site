@@ -24,6 +24,8 @@ export default function Works() {
     <div id='works' className='works'>
       <div
         className="slider"
+        //  this animation needs to be dinamicaly calculated,
+        // that s why it is not in scss file
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
 

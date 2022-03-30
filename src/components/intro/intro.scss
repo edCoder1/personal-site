@@ -4,9 +4,18 @@
   background-color: $secondaryColor;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     flex: 0.5;
     // overflow: hidden;
+
+    @include mobile {
+      overflow: hidden;
+    }
 
     .image-container {
       margin-top: 50px;
@@ -19,15 +28,23 @@
       align-items: flex-end;
       justify-content: center;
       float: left;
+
+      @include mobile {
+        align-items: flex-start;
+      }
     }
 
     img {
       height: 80%;
+
+      @include mobile{
+        height: 50%;
+      }
     }
   }
 
   .right {
-    flex: 0.5;
+    flex: 0.2;
     position: relative;
 
     .wrapper {
@@ -37,18 +54,35 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include mobile{
+        padding-left: 0;
+        align-items: center;
+      }
     }
 
     h1 {
       margin-top: -10px;
       font-size: 40px;
+
+      @include mobile{
+        font-size: 30px;
+      }
     }
     h2 {
       font-size: 25px;
+
+      @include mobile{
+        font-size: 20px;
+      }
     }
     h3 {
       margin-top: -10px;
       font-size: 20px;
+
+      @include mobile{
+        // font-size: 25px;
+      }
 
       span {
         font-size: inherit;
@@ -76,6 +110,10 @@
       position: absolute;
       bottom: 10px;
       left: 25%;
+
+      @include mobile{
+        display: none;
+      }
 
       img {
         width: 50px;
