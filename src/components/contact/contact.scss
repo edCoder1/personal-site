@@ -5,6 +5,10 @@
   background-color: $secondaryColor;
   display: flex;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     flex: 1;
     overflow: hidden;

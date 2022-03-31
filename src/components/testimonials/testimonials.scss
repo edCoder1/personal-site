@@ -3,8 +3,8 @@
 .testimonials {
   background-color: $secondaryColor;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 
   h1 {
     font-size: 50px;
@@ -20,8 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    // background-color: red;
+
+    @include mobile{
+      flex-direction: column;
+    }
 
     .card {
       width: 250px;
@@ -81,6 +83,7 @@
 
         @include mobile{
           font-size: 12px;
+          padding: 5px;
         }
       }
 
