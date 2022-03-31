@@ -65,12 +65,20 @@
           margin: 10px;
         }
 
+        @include little {
+          width: 15px;
+        }
+
         .left {
           flex: 4;
           height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @include mobile {
+            flex: 8;
+          }
 
           .left-container {
             width: 90%;
@@ -129,11 +137,20 @@
           justify-content: center;
           overflow: hidden;
 
+          @include little {
+            display: none;
+          }
+
           img {
             width: 350px;
             transform: rotate(-10deg);
             overflow: hidden;
+
+            @include mobile {
+              width: 200px;
+            }
           }
+
         }
 
       }
