@@ -112,7 +112,7 @@
       left: 25%;
 
       @include mobile{
-        display: none;
+        position:unset
       }
 
       img {

@@ -2,7 +2,7 @@ export const works = [
   {
     id: "1",
     icon: "./assets/mobile.png",
-    title: "Web Design",
+    title: "Web Development in Agile Environment",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
     img:
@@ -11,7 +11,7 @@ export const works = [
   {
     id: "2",
     icon: "./assets/globe.png",
-    title: "Mobile Application",
+    title: "Pragmatic Thinking",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     img:
@@ -20,7 +20,7 @@ export const works = [
   {
     id: "3",
     icon: "./assets/writing.png",
-    title: "Branding",
+    title: "Passion for Choaching/Teaching",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     img:
