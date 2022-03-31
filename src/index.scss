@@ -15,3 +15,17 @@ $secondaryColor: white;
 $textColorSecondary: black;
 $circleColor: #006466;
 
+// Responsive site
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content
+  }
+};
+
+@mixin little {
+  @media (max-width: 500) {
+    @content
+  }
+};

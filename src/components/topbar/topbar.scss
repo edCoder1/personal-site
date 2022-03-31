@@ -25,6 +25,10 @@
         font-weight: 400;
         text-decoration: none;
         color: inherit;   // this turned teh color effectively, why?
+
+        @include mobile {
+          font-size: 40px;
+        }
       }
 
     }

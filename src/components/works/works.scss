@@ -7,10 +7,18 @@
   justify-content: center;
   position: relative;
 
+  @include mobile {
+    height: 25px;
+  }
+
   .arrow {
     height: 60px;
     position: absolute;
     cursor: pointer;
+
+    @include mobile {
+      display: none;
+    }
 
     &.left {
       left: 100px;
@@ -29,6 +37,14 @@
     left: 0;
     transition: all 1s ease-out;
 
+    @include mobile {
+      height: 100vh;
+      // width: 100px;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -44,12 +60,25 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+          height: 100px;
+          margin: 20px;
+        }
+
+        @include little {
+          width: 15px;
+        }
+
         .left {
           flex: 4;
-          height: 80%;
+          height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+
+          @include mobile {
+            flex: 8;
+          }
 
           .left-container {
             width: 90%;
@@ -66,6 +95,11 @@
               display: flex;
               align-items: center;
               justify-content: center;
+
+              @include mobile {
+                display: none;
+              }
+
             }
           }
 
@@ -75,6 +109,10 @@
 
           p {
             font-size: 13px;
+
+            @include mobile {
+              display: none;
+            }
           }
 
           span {
@@ -82,6 +120,11 @@
             font-weight: 600;
             text-decoration: underline;
             cursor: pointer;
+
+            @include mobile {
+              display: none;
+            }
+
           }
 
         }
@@ -94,11 +137,20 @@
           justify-content: center;
           overflow: hidden;
 
+          @include little {
+            display: none;
+          }
+
           img {
             width: 350px;
             transform: rotate(-10deg);
             overflow: hidden;
+
+            @include mobile {
+              width: 200px;
+            }
           }
+
         }
 
       }

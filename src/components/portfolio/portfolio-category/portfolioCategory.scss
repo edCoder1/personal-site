@@ -13,4 +13,8 @@
     color: $secondaryColor;
   }
 
+  @include little {
+    flex-direction: column;
+  }
+
 }

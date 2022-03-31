@@ -12,6 +12,10 @@
 
   h1 {
     font-size: 50px;
+
+    @include mobile{
+      font-size: 40px;
+    }
   }
 
   ul {
@@ -19,6 +23,11 @@
     padding: 0;
     list-style-type: none;
     display: flex;
+
+    @include mobile{
+      font-size: 10px;
+    }
+
   }
 
   .container {
