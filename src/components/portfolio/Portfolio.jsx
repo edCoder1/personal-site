@@ -2,34 +2,30 @@ import './portfolio.scss';
 
 import PortfolioCategory from './portfolio-category/PortfolioCategory';
 import PortfolioItem from './portfolio-item/PortfolioItem';
-import {
-  featuredPortfolio,
-  webPortfolio,
-  mobilePortfolio
-} from '../../data/portfolio'
+import { frontend, backend, other } from '../../data/portfolio'
 
 import { useEffect, useState } from 'react';
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState('featured');
-  const [data, setData] = useState(featuredPortfolio);
+  const [selected, setSelected] = useState('front');
+  const [data, setData] = useState(frontend);
 
   const portfolioCategories = [
-    { id: 'featured', title: 'Featured' },
-    { id: 'web',      title: 'Web Application' },
-    { id: 'mobile',   title: 'Mobile Application' },
+    { id: 'front',  title: 'Frontend' },
+    { id: 'back',   title: 'Backend' },
+    { id: 'other',  title: 'Other' },
   ];
 
   useEffect(() => {
     switch (selected) {
-      case 'web':
-        setData(webPortfolio)
+      case 'front':
+        setData(frontend)
         break;
-      case 'mobile':
-        setData(mobilePortfolio)
+      case 'back':
+        setData(backend)
         break;
-      case 'featured':
-        setData(featuredPortfolio)
+      case 'other':
+        setData(other)
         break;
       default:
         break;
