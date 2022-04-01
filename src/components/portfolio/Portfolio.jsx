@@ -22,14 +22,14 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch (selected) {
-      case 'featured':
-        setData(featuredPortfolio)
-        break;
       case 'web':
         setData(webPortfolio)
         break;
       case 'mobile':
         setData(mobilePortfolio)
+        break;
+      case 'featured':
+        setData(featuredPortfolio)
         break;
       default:
         break;
