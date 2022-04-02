@@ -11,7 +11,7 @@
   align-items: center;
 
   h1 {
-    font-size: 50px;
+    font-size: 60px;
 
     @include mobile{
       font-size: 40px;
@@ -31,11 +31,14 @@
   }
 
   .container {
-    width: 70%;
+    // width: 70%;
     display: flex;
+    // flex-direction: column;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    margin: 30px;
   }
 
 }

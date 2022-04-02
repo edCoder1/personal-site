@@ -3,8 +3,13 @@ import './portfolioItem.scss'
 export default function PortfolioItem({ id, title, img }) {
   return (
     <div id={id} className="portfolio-item">
-      <img src={img} alt=''/>
-      <h3>{title}</h3>
+      <div>
+        <img src={img} alt=''/>
+        {/* <h3>{title}</h3> */}
+      </div>
+      <div className="title-container">
+        <h2>{title}</h2>
+      </div>
     </div>
   )
 }

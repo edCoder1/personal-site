@@ -47,7 +47,7 @@ export const other = [
   },
   {
     id: 2,
-    title: "Docker",
+    title: "SQL",
     img: "assets/sql-logo.png",
   },
   {
