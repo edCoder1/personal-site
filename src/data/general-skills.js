@@ -1,4 +1,4 @@
-export const works = [
+export const generalSkills = [
   {
     id: "1",
     icon: "./assets/mobile.png",

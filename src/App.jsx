@@ -3,7 +3,7 @@ import './app.scss'
 import Topbar from './components/topbar/Topbar';
 import Intro from './components/intro/Intro';
 import Portfolio from './components/portfolio/Portfolio';
-import Works from './components/works/Works';
+import GeneralSkills from './components/general-skills/GeneralSkills';
 import Menu from './components/menu/Menu';
 
 import { useState } from 'react';
@@ -22,7 +22,7 @@ function App() {
       <div className="sections">
         <Intro/>
         <Portfolio/>
-        <Works/>
+        <GeneralSkills/>
         {/* <Testimonials/>
         <Contact/> */}
       </div>

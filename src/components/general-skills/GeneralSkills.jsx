@@ -1,16 +1,15 @@
-import './works.scss';
+import './generalSkills.scss';
 import { useState } from 'react';
 
-import SmartphoneIcon from '@material-ui/icons/Smartphone';
-import { works } from '../../data/works';
+import { generalSkills } from '../../data/general-skills';
 
-export default function Works() {
+export default function GeneralSkills() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const moveSlide = (direction = '') => {
 
-    const totalSlides = works.length - 1;
+    const totalSlides = generalSkills.length - 1;
 
     if (direction === 'left') {
       setCurrentSlide( (currentSlide > 0) ? (currentSlide -1) : 2 );
@@ -21,7 +20,7 @@ export default function Works() {
   };
 
   return (
-    <div id='works' className='works'>
+    <div id='general-skills' className='general-skills'>
 
       <h1>General Skills</h1>
 
@@ -33,8 +32,8 @@ export default function Works() {
       >
 
         {
-          works.map((work) => (
-            <div id={work.id} className="container">
+          generalSkills.map((skill) => (
+            <div id={skill.id} className="container">
               <div className="item">
     
                 <div className="left">
@@ -42,17 +41,17 @@ export default function Works() {
                     {/* Put some igame/icon/bafge here */}
                     {/* <img src="" alt="" className="img-container" /> */}
                     {/* <div className="icon-container">
-                      {work.iconnnnn || <SmartphoneIcon/>}
+                      {skill.iconnnnn || <SmartphoneIcon/>}
                     </div> */}
-                    <h2>{work.title}</h2>
-                    {/* <p>{work.desc}</p>
+                    <h2>{skill.title}</h2>
+                    {/* <p>{skill.desc}</p>
                     <span>Projects</span> */}
                   </div>
                 </div>
     
                 <div className="right">
                   <img
-                    src={work.img}
+                    src={skill.img}
                     alt=""
                   />
                 </div>
