@@ -22,6 +22,9 @@ export default function Works() {
 
   return (
     <div id='works' className='works'>
+
+      <h1>General Skills</h1>
+
       <div
         className="slider"
         //  this animation needs to be dinamicaly calculated,
@@ -38,12 +41,12 @@ export default function Works() {
                   <div className="left-container">
                     {/* Put some igame/icon/bafge here */}
                     {/* <img src="" alt="" className="img-container" /> */}
-                    <div className="icon-container">
+                    {/* <div className="icon-container">
                       {work.iconnnnn || <SmartphoneIcon/>}
-                    </div>
+                    </div> */}
                     <h2>{work.title}</h2>
-                    <p>{work.desc}</p>
-                    <span>Projects</span>
+                    {/* <p>{work.desc}</p>
+                    <span>Projects</span> */}
                   </div>
                 </div>
     

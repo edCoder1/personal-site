@@ -20,7 +20,7 @@ export const works = [
   {
     id: "3",
     icon: "./assets/writing.png",
-    title: "Passion for Choaching/Teaching",
+    title: "Passion for Choaching / Teaching",
     desc:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     img:

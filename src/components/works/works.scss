@@ -7,6 +7,12 @@
   justify-content: center;
   position: relative;
 
+  h1 {
+    font-size: 60px;
+    color: $secondaryColor;
+    position: absolute;
+  }
+
   @include mobile {
     height: 25px;
   }
@@ -104,7 +110,11 @@
           }
 
           h2 {
-            font-size: 20px;
+            font-size: 30px;
+
+            @include mobile {
+              font-size: 20px;
+            }
           }
 
           p {

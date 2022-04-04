@@ -6,16 +6,21 @@ export const frontend = [
   },
   {
     id: 2,
+    title: "React",
+    img: "assets/react-logo.png"
+  },
+  {
+    id: 3,
     title: "HTML",
     img: "assets/html-logo.png"
   },
   {
-    id: 3,
+    id: 4,
     title: "CSS",
     img: "assets/css-logo.png"
   },
   {
-    id: 4,
+    id: 5,
     title: "Javascript",
     img: "assets/js-logo.png"
   },

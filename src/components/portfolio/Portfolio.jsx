@@ -34,7 +34,7 @@ export default function Portfolio() {
 
   return (
     <div id='portfolio' className='portfolio'>
-      <h1>Portfolio</h1>
+      <h1>Technical Skills</h1>
       <ul>
         {
           portfolioCategories.map((category) =>
