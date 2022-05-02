@@ -1,4 +1,4 @@
-import './intro.scss';
+import './home.scss';
 
 // UNUSED TYPING ANIMATION
 

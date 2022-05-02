@@ -9,7 +9,7 @@ export default function Menu({ openMenu, setOpenMenu }) {
         you should create a component instead
         */}
         <li key={1} onClick={() => setOpenMenu(false)}>
-          <a href="#intro">home</a>
+          <a href="#home">home</a>
         </li>
         <li key={2} onClick={() => setOpenMenu(false)}>
           <a href="#tech-skills">technical skills</a>
