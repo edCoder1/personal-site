@@ -9,13 +9,13 @@ export default function Menu({ openMenu, setOpenMenu }) {
         you should create a component instead
         */}
         <li key={1} onClick={() => setOpenMenu(false)}>
-          <a href="#home">home</a>
+          <a href="#home">HOME</a>
         </li>
         <li key={2} onClick={() => setOpenMenu(false)}>
-          <a href="#tech-skills">technical skills</a>
+          <a href="#tech-skills">TECHNICAL SKILLS</a>
         </li>
         <li key={3} onClick={() => setOpenMenu(false)}>
-          <a href="#general-skills">general skills</a>
+          <a href="#general-skills">GENERAL SKILSS</a>
         </li>
         {/* <li onClick={() => setOpenMenu(false)}>
           <a href="#testimonials">testimonials</a>
