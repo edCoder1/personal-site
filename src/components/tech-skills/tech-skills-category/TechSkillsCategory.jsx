@@ -1,4 +1,4 @@
-import './portfolioCategory.scss'
+import './techSkillsCategory.scss'
 
 export default function PortfolioCategory({ id, title, active, setSelected }) {
   return (

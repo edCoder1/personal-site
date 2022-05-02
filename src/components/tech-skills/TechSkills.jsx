@@ -1,6 +1,6 @@
 import './techSkill.scss';
 
-import PortfolioCategory from './portfolio-category/PortfolioCategory';
+import PortfolioCategory from './tech-skills-category/TechSkillsCategory';
 import PortfolioItem from './tech-skill/TechSkillItem';
 import { frontend, backend, other } from '../../data/tech-skills'
 
