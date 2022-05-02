@@ -1,7 +1,7 @@
-import './portfolio.scss';
+import './techSkill.scss';
 
 import PortfolioCategory from './portfolio-category/PortfolioCategory';
-import PortfolioItem from './tech-skill/PortfolioItem';
+import PortfolioItem from './tech-skill/TechSkillItem';
 import { frontend, backend, other } from '../../data/tech-skills'
 
 import { useEffect, useState } from 'react';

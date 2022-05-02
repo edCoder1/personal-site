@@ -1,4 +1,4 @@
-import './portfolioItem.scss'
+import './techSkillItem.scss'
 
 export default function PortfolioItem({ id, title, img }) {
   return (
