@@ -8,14 +8,14 @@ export default function Menu({ openMenu, setOpenMenu }) {
         It is not he best practice to repeat elements like this
         you should create a component instead
         */}
-        <li onClick={() => setOpenMenu(false)}>
+        <li key={1} onClick={() => setOpenMenu(false)}>
           <a href="#intro">home</a>
         </li>
-        <li onClick={() => setOpenMenu(false)}>
-          <a href="#portfolio">technical skills</a>
+        <li key={2} onClick={() => setOpenMenu(false)}>
+          <a href="#tech-skills">technical skills</a>
         </li>
-        <li onClick={() => setOpenMenu(false)}>
-          <a href="#works">general skills</a>
+        <li key={3} onClick={() => setOpenMenu(false)}>
+          <a href="#general-skills">general skills</a>
         </li>
         {/* <li onClick={() => setOpenMenu(false)}>
           <a href="#testimonials">testimonials</a>

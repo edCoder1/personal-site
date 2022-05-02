@@ -2,7 +2,7 @@ import './portfolioItem.scss'
 
 export default function PortfolioItem({ id, title, img }) {
   return (
-    <div id={id} className="portfolio-item">
+    <div key={id} id={id} className="portfolio-item">
       <div>
         <img src={img} alt=''/>
         {/* <h3>{title}</h3> */}

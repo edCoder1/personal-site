@@ -2,7 +2,7 @@ import './portfolio.scss';
 
 import PortfolioCategory from './portfolio-category/PortfolioCategory';
 import PortfolioItem from './portfolio-item/PortfolioItem';
-import { frontend, backend, other } from '../../data/portfolio'
+import { frontend, backend, other } from '../../data/tech-skills'
 
 import { useEffect, useState } from 'react';
 
@@ -33,7 +33,7 @@ export default function Portfolio() {
   }, [selected])
 
   return (
-    <div id='portfolio' className='portfolio'>
+    <div id='tech-skills' className='portfolio'>
       <h1>Technical Skills</h1>
       <ul>
         {

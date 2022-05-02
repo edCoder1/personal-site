@@ -19,7 +19,7 @@ export default function Intro() {
   // }, []);
 
   return (
-    <div id='intro' className='intro'>
+    <div id='home' className='intro'>
       <div className="left">
         <div className="image-container">
           <img src="assets/web-dev-03.png" alt="" />
@@ -33,7 +33,7 @@ export default function Intro() {
             Fullstack <span>Web Developer</span>
             {/* Fullstack Web Developer <span ref={textRef}></span> */}
           </h3>
-          <a href="#portfolio">
+          <a href="#tech-skills">
             <img src="assets/down.png" alt="" />
           </a>
         </div>

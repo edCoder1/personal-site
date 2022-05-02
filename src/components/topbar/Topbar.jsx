@@ -11,7 +11,7 @@ export default function Topbar({ openMenu, setOpenMenu }) {
       <div className="wrapper">
 
         <div className="left">
-          <a href='#intro' className='logo'>
+          <a href='#home' className='logo'>
               code, live.
           </a>
         </div>
